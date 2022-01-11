@@ -29,3 +29,7 @@
 main {
   display: flex;
 }
+
+#full-name {
+  display: flex;
+}
