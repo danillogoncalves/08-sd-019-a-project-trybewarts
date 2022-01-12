@@ -17,6 +17,7 @@ for (let i = 1; i <= 10; i += 1) {
   const label = document.createElement('label');
   radio.type = 'radio';
   radio.name = 'rate';
+  radio.value = i;
   radio.id = `rate${i}`;
   label.htmlFor = `rate${i}`;
   label.appendChild(radio);

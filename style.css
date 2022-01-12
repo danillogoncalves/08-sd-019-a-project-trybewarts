@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-main {
+main , #container-avaliacao {
   display: flex;
 }
 
