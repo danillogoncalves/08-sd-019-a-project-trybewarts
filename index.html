@@ -27,7 +27,7 @@
         <input id="input-name" type="text" placeholder="Nome">
         <input id="input-lastname" type="text" placeholder="Sobrenome">
       </div>
-      <div id="renderecos">
+      <div id="enderecos">
         <input id="input-email" type="text" placeholder="Email">
         <select name="" id="house">
           <option id="gitnoria-house" value="Gitnória">Gitnória</option>
@@ -37,11 +37,29 @@
         </select>
       </div>
       <hr>
-      <label id="label-family">Qual sua família?</label>
-      <label for="frontend"><input id="frontend" type="radio" name="family" value="Frontend"> Frontend</label>
-      <label for="backend"><input id="backend" type="radio" name="family" value="Backend"> Backend</label>
-      <label for="fullStack"><input id="fullStack" type="radio" name="family" value="FullStack"> FullStack</label>
-
+      <div id="opcoes">
+        <div id="familia">
+          <div>
+            <label id="label-family">Qual sua família?</label>
+          </div>
+          <label for="frontend"><input id="frontend" type="radio" name="family" value="Frontend"> Frontend</label>
+          <label for="backend"><input id="backend" type="radio" name="family" value="Backend"> Backend</label>
+          <label for="fullStack"><input id="fullStack" type="radio" name="family" value="FullStack"> FullStack</label>
+        </div>
+        <div id="conteudo">
+          <div>
+            <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+          </div>
+          <div>
+            <label for="hofs"></label><input id="hofs" type="checkbox" value="HoFs"> HoFs</label>
+            <label for="jest"></label><input id="jest" type="checkbox" value="Jest"> Jest</label>
+            <label for="promises"></label><input id="promises" type="checkbox" value="Promises"> Promises</label>
+            <label for="react"></label><input id="react" type="checkbox" value="React"> React</label>
+            <label for="sql"></label><input id="sql" type="checkbox" value="SQL"> SQL</label>
+            <label for="python"></label><input id="python" type="checkbox" value="Python"> Python</label>
+          </div>
+        </div>
+      </div>
     </form>
     <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="Brasão da Trybewarts">
   </main>

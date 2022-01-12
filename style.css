@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+main {
+  display: flex;
+}
+
 .header {
   background-color: rgb(50, 167, 145);
   display: flex;
@@ -26,14 +30,20 @@
   flex-direction: column;
 }
 
-main {
-  display: flex;
-}
-
-/* #renderecos {
+/* #enderecos {
 
 } */
 
 #full-name {
   display: flex;
+}
+
+#opcoes {
+  display: flex;
+}
+
+
+#familia , #conteudo {
+  display: flex;
+  flex-direction: column;
 }
