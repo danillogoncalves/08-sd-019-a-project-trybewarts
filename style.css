@@ -43,7 +43,7 @@ main , #container-avaliacao {
 }
 
 
-#familia , #conteudo {
+#familia , #conteudo , #container-textarea {
   display: flex;
   flex-direction: column;
 }
