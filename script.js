@@ -2,6 +2,7 @@ const loginEmailTrybe = document.querySelector('#login-email');
 const loginSenhaTrybe = document.querySelector('#login-senha');
 const loginButtonTrybe = document.querySelector('#login-button');
 const containerAvaliacao = document.querySelector('#container-avaliacao');
+const concordo = document.querySelector('#agreement');
 
 const entrar = function loginTrybewarts(event) {
   event.preventDefault();
@@ -25,4 +26,14 @@ for (let i = 1; i <= 10; i += 1) {
   containerAvaliacao.appendChild(label);
 }
 
+const habilitaEnviar = function checkHabilitaBotao() {
+  const buttonSubmit = document.getElementById('submit-btn');
+  if (concordo.checked) {
+    buttonSubmit.disabled = false;
+  } else if (!concordo.checked) {
+    buttonSubmit.disabled = true;
+  }
+};
+
 loginButtonTrybe.onclick = entrar;
+concordo.onclick = habilitaEnviar;
