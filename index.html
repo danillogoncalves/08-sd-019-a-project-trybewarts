@@ -24,11 +24,11 @@
   <main>
     <form id="evaluation-form" action="" method="get">
       <div id="full-name">
-        <input id="input-name" type="text" placeholder="Nome">
-        <input id="input-lastname" type="text" placeholder="Sobrenome">
+        <input id="input-name" type="text" placeholder="Nome" required />
+        <input id="input-lastname" type="text" placeholder="Sobrenome" required />
       </div>
       <div id="enderecos">
-        <input id="input-email" type="text" placeholder="Email">
+        <input id="input-email" type="text" placeholder="Email" required />
         <select name="" id="house">
           <option id="gitnoria-house" value="Gitnória">Gitnória</option>
           <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
@@ -42,21 +42,21 @@
           <div>
             <label id="label-family">Qual sua família?</label>
           </div>
-          <label for="frontend"><input id="frontend" type="radio" name="family" value="Frontend"> Frontend</label>
-          <label for="backend"><input id="backend" type="radio" name="family" value="Backend"> Backend</label>
-          <label for="fullStack"><input id="fullStack" type="radio" name="family" value="FullStack"> FullStack</label>
+          <label for="frontend"><input id="frontend" type="radio" name="family" value="Frontend" checked />Frontend</label>
+          <label for="backend"><input id="backend" type="radio" name="family" value="Backend">Backend</label>
+          <label for="fullStack"><input id="fullStack" type="radio" name="family" value="FullStack">FullStack</label>
         </div>
         <div id="conteudo">
           <div>
             <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
           </div>
-          <div>
-            <label for="hofs"></label><input id="hofs" type="checkbox" value="HoFs"> HoFs</label>
-            <label for="jest"></label><input id="jest" type="checkbox" value="Jest"> Jest</label>
-            <label for="promises"></label><input id="promises" type="checkbox" value="Promises"> Promises</label>
-            <label for="react"></label><input id="react" type="checkbox" value="React"> React</label>
-            <label for="sql"></label><input id="sql" type="checkbox" value="SQL"> SQL</label>
-            <label for="python"></label><input id="python" type="checkbox" value="Python"> Python</label>
+          <div id="conteudo-tech">
+            <label for="hofs"><input id="hofs"  class="subject" type="checkbox" value="HoFs"> HoFs</label>
+            <label for="jest"><input id="jest" class="subject" type="checkbox" value="Jest"> Jest</label>
+            <label for="promises"><input id="promises" class="subject" type="checkbox" value="Promises"> Promises</label>
+            <label for="react"><input id="react" class="subject" type="checkbox" value="React"> React</label>
+            <label for="sql"><input id="sql" class="subject" type="checkbox" value="SQL"> SQL</label>
+            <label for="python"><input id="python" class="subject" type="checkbox" value="Python"> Python</label>
           </div>
         </div>
       </div>
