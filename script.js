@@ -6,6 +6,8 @@ const concordo = document.querySelector('#agreement');
 const buttonSubmit = document.getElementById('submit-btn');
 const nameFamily = document.getElementsByName('family');
 const listConteudoTech = document.querySelector('#conteudo-tech').getElementsByTagName('input');
+const caixaDeTexto = document.querySelector('#textarea');
+const contadorDeCaracter = document.querySelector('#counter');
 
 const entrar = function loginTrybewarts(event) {
   event.preventDefault();
@@ -34,6 +36,10 @@ const criaRadioAvaliacao = () => {
 };
 
 criaRadioAvaliacao();
+
+const contagemRegressiva = () => {
+  contadorDeCaracter.innerHTML = 500 - parseInt(caixaDeTexto.value.length, 10);
+};
 
 const listContainerAvaliacao = document.querySelectorAll('.rate');
 
@@ -86,4 +92,5 @@ const criaForm = () => {
 // const conteudoForm = ['Nome', 'Email', 'Casa', 'Família', 'Matérias', 'Avaliação', 'Observações'];
 loginButtonTrybe.onclick = entrar;
 concordo.onclick = habilitaEnviar;
+caixaDeTexto.onkeyup = contagemRegressiva;
 buttonSubmit.onclick = criaForm;
